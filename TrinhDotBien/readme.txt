@@ -1,19 +1,12 @@
 
-----------------------------------------------------
-GANG Framework - Feature Vector Modification Engine 
-----------------------------------------------------
-
-	This section describes how feature vectors are modified in the 
-    the Android Automation Framework. The tree diagram is as follows:
-	
-	GANG
+	TrinhDotBien
 	│
 	├── src					
-	│   ├── gan                              => Folder for GAN binaries
+	│   ├── gan                             
 	│   │   └─generator_model_gan_.h5
 	│   │
-	│   ├── blackboxmodel                    => Folder for blackbox model binaries
-	│   │   ├──blackboxdetector.py           => python program to 'OR' models 
+	│   ├── blackboxmodel                   
+	│   │   ├──blackboxdetector.py          
 	│   │   ├──blackbox_svm_model.pickle
 	│   │   ├──blackbox_rf_model.pickle
 	│   │   ├──blackbox_xgBoost_model.pickle
@@ -26,13 +19,6 @@ GANG Framework - Feature Vector Modification Engine
 	│   │
 	│   └── modified_feature_vector.py
 	│
-	├── modified_feature_vector					=> Folder to store the modified csvs
+	├── modified_feature_vector					
 	│
 	└── readme.txt
-	
-------
-Usage
-------
-
-	$. cd  GANG\src
-	$. python modifiy_feature_vectors.py <path to csv file>
